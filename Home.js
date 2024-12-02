@@ -53,6 +53,6 @@ async function buyProduct(productName, price, image) {
          window.location.href = "Mycart.html"; // Chuyển hướng đến trang giỏ hàng
     } catch (error) {
         console.error("An error occurred while adding product to cart.:", error);
-        alert("Unable to add product to cart. Please try again..");
+        alert("Unable to add product to cart. Please try again...");
     }
 }
