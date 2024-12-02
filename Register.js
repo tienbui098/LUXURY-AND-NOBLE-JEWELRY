@@ -16,6 +16,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // Validate input fields
         if (!validateInputs(username, password, email, address, phoneNumber, dateOfBirth)) {
+            // Nếu không hợp lệ, vẫn chuyển hướng đến trang đăng nhập
+            window.location.href = "Login.html";
             return; // Stop form submission if validation fails
         }
 
@@ -37,7 +39,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // Optional: Redirect to Login page or display a success message
         alert("Registration successful!");
-        // window.location.href = "Login.html"; // Uncomment to redirect after registration
+        window.location.href = "Login.html"; // Uncomment to redirect after registration
     });
 });
 
