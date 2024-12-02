@@ -27,6 +27,13 @@ document.addEventListener("DOMContentLoaded", function () {
           alert("Invalid username or password. Please try again.");
       }
   });
+
+      // Handle click event for the "Register here" link
+      const registerLink = document.querySelector('.register-link a');
+      registerLink.addEventListener('click', function (event) {
+          event.preventDefault(); // Prevent default anchor behavior
+          window.location.href = "Index.html"; // Redirect to registration page
+        });
 });
 
 // Function to validate inputs
