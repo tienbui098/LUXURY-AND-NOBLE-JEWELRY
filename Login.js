@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function () {
       const registerLink = document.querySelector('.register-link a');
       registerLink.addEventListener('click', function (event) {
           event.preventDefault(); // Prevent default anchor behavior
-          window.location.href = "Index.html"; // Redirect to registration page
+          window.location.href = "index.html"; // Redirect to registration page
         });
 });
 
